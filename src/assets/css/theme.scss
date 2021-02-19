@@ -1,0 +1,128 @@
+html {
+  // 滚动条正在显示，即使我的内容没有垂直溢出 - 暂未出现此问题
+  overflow: auto;
+}
+li {
+  list-style: none;
+}
+
+.v-application.g-app {
+  .container {
+    padding: 0;   // 不设置为0 响应式瀑布流会有问题
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    vertical-align: bottom;
+  }
+  i {
+    font-style: normal;
+  }
+
+  // h1 {
+  //   font-size: 20px;
+  // }
+  // h2 {
+  //   font-size: 18px;
+  // }
+
+  .app-pc {
+    .container {
+      min-height: 500px;
+    }
+  }
+}
+
+.ell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// IE不兼容
+.two-ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.g-pointer {
+  cursor: pointer;
+}
+
+// pc端专属公共样式
+.app-pc {
+  background: $bg-color-light;
+  .g-wrap {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+// 统一的tab样式
+.g-tab-box {
+  position: relative;
+  .item {
+    &.active {
+      font-weight: bold;
+    }
+  }
+  &.pc {
+    .item {
+      position: relative;
+      margin-bottom: 50px;
+      font-size: $font-size-tab;
+      color: $text-color-tab;
+      &.active {
+        color: $text-color-base;
+      }
+      &.active:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        color: $text-color-base;
+        background: url(~@images/tab-act.png) no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    .tab-line {
+      width: 1px;
+      // height: 100%;
+      // height: 700px;
+      height: calc(100% + 7px);
+      background: $border-color-tab;
+      opacity: 0.3;
+      position: absolute;
+      left: -1px;
+      top: 0;
+    }
+  }
+  // &.mobile {
+  //   display: flex;
+  //   .item {
+  //     margin-right: 20px;
+  //   }
+  // }
+}
+
+// 有圆圈背景图的文字
+.g-title-bg {
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}

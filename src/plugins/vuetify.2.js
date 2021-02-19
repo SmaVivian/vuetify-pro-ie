@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+import Vue from 'vue';
+import Vuetify from 'vuetify/lib/framework';
 
-const opts = {
+Vue.use(Vuetify);
+
+export default new Vuetify({
+  // icons: {
+  //   iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+  // },
   breakpoint: {
     // mobileBreakpoint: 1200, // 写法1：屏幕宽度小于1200为移动端 
     mobileBreakpoint: 'md', // 写法2：屏幕宽度小于1200为移动端 
@@ -30,20 +34,4 @@ const opts = {
       },
     },
   },
-}
-Vue.use(Vuetify)
-
-// new Vue({
-//   vuetify: new Vuetify(opts)
-// }).$mount('#app')
-// import Vue from 'vue'
-// import Vuetify from 'vuetify'
-// import 'vuetify/dist/vuetify.min.css'
-
-// Vue.use(Vuetify, {
-//   iconfont: 'md'
-// });
-
-// const opts = {}
-
-export default new Vuetify(opts)
+});

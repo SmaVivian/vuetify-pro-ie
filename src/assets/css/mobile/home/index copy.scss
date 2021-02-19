@@ -1,0 +1,226 @@
+.b {
+  height: 300px;
+}
+.cc.ignore {
+  font-size: 30px;
+}
+.test {
+  /*font-size: 30px;必须使用此种注释*/ 
+  font-size: 30px;
+}
+
+.page-home.mobile {
+  .page-home-wrap {
+    .swiper-container1 {
+      .swiper-slide {
+        height: 468px;
+      }
+    }
+
+    .swiper-container-notice {
+      height: 56px;
+      .swiper-slide {
+        .item {
+          font-size: 24px;
+        }
+      }
+    }
+    .section-notice {
+      background: $bg-color-light;
+    }
+    .section-visit-wrap {
+      background: $bg-color-light;
+      .section-visit {
+        .visit-box {
+          font-size: 24px;
+          .time-list {
+            .time {
+              font-size: 32px;
+              font-weight: bold;
+            }
+          }
+          .btn-visit {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(50%);
+          }
+        }
+      }
+    }
+    .section-infomation {
+      .infomation-list {
+        .item {
+          font-size: 24px;
+          line-height: 38px;
+          .pic-box {
+            height: 196px;
+            .day-box {
+              width: 80px;
+              height: 80px;
+              .day {
+                left: 8px;
+                top: 6px;
+                font-size: 28px;
+              }
+              i {
+                position: absolute;
+                left: 36px;
+                top: 14px;
+                width: 2px;
+                height: 50px;
+              }
+              .mon {
+                font-size: 20px;
+                bottom: 8px;
+                right: 8px;
+                transform: scale(.8);
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-exhibition {
+      background: $bg-color-light;
+      .exhi-swiper {
+        padding-bottom: 160px;
+        .swiper-container-exhi {
+          background: #fff;
+          height: auto;
+          .swiper-slide {
+            .pic {
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .pic-info {
+              h3 {
+                color: $text-color-base;
+                font-size: 30px;
+                font-weight: normal;
+                line-height: 50px;
+                text-align: left;
+              }
+              .exhi-time {
+                font-size: 24px;
+                line-height: 34px;
+                color: $text-color-grey;
+              }
+            }
+          }
+        }
+        .swiper-count {
+          &.mobile {
+            background: transparent;
+            left: 50%;
+            bottom: 60px;
+            transform: translateX(-50%);
+            .count-box {
+              .count {
+                color: $text-color-base;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+      .btn-more {
+        top: 32px;
+      }
+    }
+    .section-collect {
+      .swiper-container3 {
+        position: relative;
+        padding-bottom: 216px;
+        .collect-info {
+          font-size: 28px;
+          text-align: center;
+          color: #fff;
+        }
+        .swiper-count {
+          &.mobile {
+            background: transparent;
+            left: 50%;
+            bottom: 60px;
+            transform: translateX(-50%);
+            .count-box {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .section-links {
+      .links-item {
+        /*
+        &:nth-child(1),
+        &:nth-child(2) {
+          height: 200px;
+        }
+        &:nth-child(3) {
+          height: 210px;
+        }
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          height: 160px;
+        }
+        img {
+          height: 100%;
+        }
+        */
+      }
+    }
+
+    .btn-more {
+      font-size: 22px;
+      border: none;
+      img {
+        width: 22px;
+      }
+    }
+
+    .swiper-count {
+      &.mobile {
+        background: rgba(0, 0, 0, .3);
+        border-radius: 30px;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        .count-box {
+          padding: 0 30px;
+          .count {
+            color: #fff;
+            margin: 0;
+            font-size: 32px;
+            i {
+              font-size: 40px;
+            }
+          }
+          .swiper-button-prev,
+          .swiper-button-next {
+            display: none;
+          }
+        }
+        .pic-box {
+          display: none;
+        }
+      }
+    }
+
+    // 修改tab样式
+    .v-tabs {
+      .v-tab {
+        font-size: 32px;
+      }
+    }
+    .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active){
+      color: $text-color-tab;
+      font-size: 26px;
+    }
+  }
+
+}

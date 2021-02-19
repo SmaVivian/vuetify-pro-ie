@@ -1,0 +1,175 @@
+// @import"~vuetify/src/styles/styles.sass";
+// 全局变量
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1200px - 16px,
+  'xl': 1920px - 16px
+);
+
+// 设计规范
+
+// 行为相关颜色
+// 同vuetify.js  使用方法如也可如color: var(--v-primary-base); 或color:$primary;
+$primary: #CCA176;
+$success: #4CAF50;
+$warning: #FB8C00;
+$error: #FF5252;
+
+/* 文字基本颜色 */
+$text-color-base: #292423; // 基本色 用于一级文字信息/tab选中文字
+$text-color-emphasis: #6B1E1E; // 强调
+$text-color-tab: #595452; //用于正文/tab默认文字
+$text-color-inverse: #ffffff; //反色
+$text-color-grey: #999493; //辅助灰色
+// $text-color-placeholder:#808080;
+// $text-color-disable:#c0c0c0;
+
+/* 背景颜色 */
+$bg-color:#292227; // 用于导航栏背景和底部背景
+$bg-color-light: #FAF5ED;
+
+/* 边框颜色 */
+// $border-color:#e5e5e5;
+$border-color:#e9d7ba;
+$border-color-tab:#d6a884; //tab选中边框高亮色
+
+/* 文字尺寸 */
+$font-size-max:26px;
+$font-size-title-1:24px;
+$font-size-title-2:20px;
+$font-size-tab:18px;
+$font-size-md: 16px; 
+$font-size-base:14px; // 正文
+
+// 行高
+$line-height-max: 30px;
+$line-height-tab:28px;
+$line-height-md: 26px;
+$line-height-base: 22px;
+
+/* 文章场景相关 */
+$color-title: #2C405A; // 文章标题颜色
+$font-size-title: 40px;
+$color-subtitle: #555555; // 二级标题颜色
+$font-size-subtitle: 36px;
+$color-paragraph: #3F536E; // 文章段落颜色
+$font-size-paragraph: 30px;
+
+// todo 优化
+.v-tabs .v-tabs-slider-wrapper {
+  height: 3px !important;
+}
+
+// 辅色
+// $assist-color:#882D2A; // 用于主要按钮
+// $assist-bg-color: #FAF5ED; // 用于背景色
+
+// // 文字颜色
+// $font-1-color: #292423; // 用于一级文字信息/tab选中文字
+// $font-body-color: #595452; // 用于正文/tab默认文字
+// $font-assist-color: #999493; // 用于辅助性文字
+
+
+// $body-font-family: 'Work Sans', serif;
+// $border-radius-root: 6px;
+// $font-size-root: 14px;
+
+// 变量必须定义在import之前
+// 移动端 --start
+// .text-h1 {
+//   font-size: 12px !important;
+//   font-weight: bold;
+//   line-height: 19px;
+// }
+// .text-h2 {
+//   font-size: 20px !important;
+//   font-weight: bold;
+//   line-height: 32px;
+// }
+// // tab切换
+// .text-body-1 {
+//   font-size: 18px !important;
+//   line-height: 28px;
+//   color: $font-body-color;
+// }
+// // 正文文字
+// .text-body-2 {
+//   font-size: 14px !important;
+//   line-height: 22px;
+//   color: $font-body-color;
+// }
+// // 移动端 --end
+
+// // pc端 --start
+// .text-lg-h1 {
+//   font-size: 24px !important;
+//   font-weight: bold;
+//   line-height: 38px;
+// }
+// .text-lg-h2 {
+//   font-size: 20px !important;
+//   font-weight: bold;
+//   line-height: 32px;
+// }
+// // tab切换
+// .text-lg-body-1 {
+//   font-size: 18px !important;
+//   line-height: 28px;
+//   color: $font-body-color;
+// }
+// // 正文文字
+// .text-lg-body-2 {
+//   font-size: 14px !important;
+//   line-height: 22px;
+//   color: $font-body-color;
+// }
+// // pc端 --end
+
+
+
+
+// $headings: map-merge($headings, (
+//   'h1': map-merge(
+//     map-get($headings, 'h1'),
+//     (
+//       'font-family': $body-font-family,
+//       'font-size': 14px
+//     )
+//   )
+// ));
+// $headings: (
+//   'h1': (
+//     'size': 24px,
+//     'line-height': 38px
+//   ),
+//   'h2': (
+//     'size': 20px,
+//     'line-height': 32px
+//   )
+// );
+
+// $btn-letter-spacing: 0;
+// $btn-font-weight: 400;
+// $list-item-title-font-size: 0.929rem;
+// $list-item-dense-title-font-size: 0.929rem;
+// $list-item-dense-title-font-weight: initial;
+// $fab-icon-sizes: (
+//   'small': 20
+// );
+// $btn-sizes: (
+//   'default': 41,
+//   'large': 54
+// );
+
+// $headings: (
+//   'h1': (
+//     'size': 3.3125rem,
+//     'line-height': 1.15em
+//   ),
+//   'h2': (
+//     'size': 2.25rem,
+//     'line-height': 1.5em
+//   )
+// );
