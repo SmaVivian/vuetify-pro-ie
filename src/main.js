@@ -4,7 +4,6 @@ import vuetify from './plugins/vuetify'
 import App from './App.vue';
 import router from './router';
 import store from './store';
-// import '@/firebase/';
 import confirm from '@cmp/confirm'
 import notify from '@cmp/notify'
 // import test from '@cmp/test'

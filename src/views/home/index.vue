@@ -307,11 +307,9 @@
               nextEl: '.swiper-container1 .swiper-button-next',
               prevEl: '.swiper-container1 .swiper-button-prev',
             },
-            on:{
-              slideChange: function() {
-                vm.swiperBannerIndex = this.realIndex + 1
-              },
-            }
+            onSlideChangeEnd: function() {
+              vm.swiperBannerIndex = this.realIndex + 1
+            },
           })
         })
       },
@@ -336,11 +334,9 @@
               nextEl: '.exhi-swiper .swiper-button-next',
               prevEl: '.exhi-swiper .swiper-button-prev',
             },
-            on:{
-              slideChange: function() {
-                vm.swiperExhiIndex = this.realIndex + 1
-              },
-            }
+            onSlideChangeEnd: function() {
+              vm.swiperExhiIndex = this.realIndex + 1
+            },
           })
         })
       },
@@ -400,11 +396,9 @@
               nextEl: '.swiper-container3 .swiper-button-next',
               prevEl: '.swiper-container3 .swiper-button-prev',
             },
-            on:{
-              slideChange: function() {
-                vm.swiperColectIndex = this.realIndex + 1
-              },
-            }
+            onSlideChangeEnd: function() {
+              vm.swiperColectIndex = this.realIndex + 1
+            },
           })
         })
       },
