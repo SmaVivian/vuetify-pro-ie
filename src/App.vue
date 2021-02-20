@@ -1,25 +1,25 @@
 <template>
   <v-app class="g-app" id="app">
-    <!-- <cmpHeader></cmpHeader> -->
+    <cmpHeader></cmpHeader>
     <v-main :class="{'app-mobile': $vuetify.breakpoint.mobile, 'app-pc': !$vuetify.breakpoint.mobile}">
       <v-container fluid>
-        <!-- <cmpBread></cmpBread> -->
+        <cmpBread></cmpBread>
         <!-- 如果使用 vue-router -->
         <router-view></router-view>
       </v-container>
-      <!-- <cmpFooter></cmpFooter> -->
+      <cmpFooter></cmpFooter>
       <!-- <router-view></router-view> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import cmpHeader from '@cmp/header'
-// import cmpBread from '@cmp/bread'
-// import cmpFooter from '@cmp/footer'
+import cmpHeader from '@cmp/header'
+import cmpBread from '@cmp/bread'
+import cmpFooter from '@cmp/footer'
 export default {
   name: 'App',
-//   components: { cmpHeader, cmpBread, cmpFooter },
+  components: { cmpHeader, cmpBread, cmpFooter },
   data: () => ({
     //
   }),
