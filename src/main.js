@@ -11,8 +11,8 @@ import notify from '@cmp/notify'
 import request from '@/utils/request'
 import '@/utils/rem'
 
-// import '@assets/css/theme.scss';
-// import '@assets/css/mobile/common.scss';
+import '@assets/css/theme.scss';
+import '@assets/css/mobile/common.scss';
 
 Vue.config.productionTip = false;
 

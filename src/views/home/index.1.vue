@@ -254,8 +254,8 @@
 <script>
   import '@css/mobile/home/index.scss';
 
-  // import Swiper from 'swiper';
-  // import 'swiper/dist/css/swiper.min.css';
+  import Swiper from 'swiper';
+  import 'swiper/dist/css/swiper.min.css';
   // import 'swiper/swiper-bundle.css';  // 6以上 部分api有问题 eg:slidesPerColumn无效
   export default {
     data() {
@@ -416,7 +416,7 @@
       },
     },
     created() {
-      // this.getData()
+      this.getData()
     }
   }
 </script>
