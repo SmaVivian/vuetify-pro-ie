@@ -303,10 +303,8 @@
             //   el: '.swiper-pagination1',
             //   clickable: true,
             // },
-            navigation: {
-              nextEl: '.swiper-container1 .swiper-button-next',
-              prevEl: '.swiper-container1 .swiper-button-prev',
-            },
+            nextButton: '.swiper-container1 .swiper-button-next',
+            prevButton: '.swiper-container1 .swiper-button-prev',
             onSlideChangeEnd: function(swiper) {
               vm.swiperBannerIndex = swiper.realIndex + 1
             },
@@ -330,10 +328,8 @@
         this.$nextTick(()=> {
           let swiper = new Swiper(".swiper-container-exhi", {
             // loop: true,
-            navigation: {
-              nextEl: '.exhi-swiper .swiper-button-next',
-              prevEl: '.exhi-swiper .swiper-button-prev',
-            },
+            nextButton: '.exhi-swiper .swiper-button-next',
+            prevButton: '.exhi-swiper .swiper-button-prev',
             onSlideChangeEnd: function(swiper) {
               vm.swiperExhiIndex = swiper.realIndex + 1
             },
@@ -392,10 +388,8 @@
                 spaceBetween: 10,
               }
             },
-            navigation: {
-              nextEl: '.swiper-container3 .swiper-button-next',
-              prevEl: '.swiper-container3 .swiper-button-prev',
-            },
+            nextButton: '.swiper-container3 .swiper-button-next',
+            prevButton: '.swiper-container3 .swiper-button-prev',
             onSlideChangeEnd: function(swiper) {
               vm.swiperColectIndex = swiper.realIndex + 1
             },
