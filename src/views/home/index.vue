@@ -254,8 +254,8 @@
 <script>
   import '@css/mobile/home/index.scss';
 
-  // import Swiper from 'swiper';
-  // import 'swiper/dist/css/swiper.min.css';
+  import Swiper from 'swiper';
+  import 'swiper/dist/css/swiper.min.css';
   // import 'swiper/swiper-bundle.css';  // 6以上 部分api有问题 eg:slidesPerColumn无效
   export default {
     data() {
@@ -307,8 +307,8 @@
               nextEl: '.swiper-container1 .swiper-button-next',
               prevEl: '.swiper-container1 .swiper-button-prev',
             },
-            onSlideChangeEnd: function() {
-              vm.swiperBannerIndex = this.realIndex + 1
+            onSlideChangeEnd: function(swiper) {
+              vm.swiperBannerIndex = swiper.realIndex + 1
             },
           })
         })
@@ -334,8 +334,8 @@
               nextEl: '.exhi-swiper .swiper-button-next',
               prevEl: '.exhi-swiper .swiper-button-prev',
             },
-            onSlideChangeEnd: function() {
-              vm.swiperExhiIndex = this.realIndex + 1
+            onSlideChangeEnd: function(swiper) {
+              vm.swiperExhiIndex = swiper.realIndex + 1
             },
           })
         })
@@ -396,8 +396,8 @@
               nextEl: '.swiper-container3 .swiper-button-next',
               prevEl: '.swiper-container3 .swiper-button-prev',
             },
-            onSlideChangeEnd: function() {
-              vm.swiperColectIndex = this.realIndex + 1
+            onSlideChangeEnd: function(swiper) {
+              vm.swiperColectIndex = swiper.realIndex + 1
             },
           })
         })
@@ -410,7 +410,7 @@
       },
     },
     created() {
-      // this.getData()
+      this.getData()
     }
   }
 </script>
